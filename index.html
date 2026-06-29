@@ -240,6 +240,26 @@
   .mbody .errs li:before{content:"\2715";color:#ff9b9b;font-size:.72rem;top:8px}
   .phint{text-align:center;color:var(--txt3);font-size:.86rem;font-family:'Oswald',sans-serif;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
   @media(max-width:560px){.mbody{padding-left:28px}}
+
+  /* COMPARATIF */
+  .cmp{max-width:780px;margin:0 auto;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;background:var(--card)}
+  .cmp .row{display:grid;grid-template-columns:1fr 140px 160px;align-items:center;border-top:1px solid rgba(255,255,255,.06)}
+  .cmp .row:first-child{border-top:none}
+  .cmp .row>div{padding:14px 18px}
+  .cmp .feat{color:var(--txt2);font-size:.95rem}
+  .cmp .c1,.cmp .c2{text-align:center;font-family:'Oswald',sans-serif;font-size:1.05rem}
+  .cmp .c2{background:rgba(232,176,75,.06);border-left:1px solid var(--line)}
+  .cmp .row.h .feat{color:var(--txt);font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.6px;font-size:12px}
+  .cmp .row.h .c1{color:var(--txt3);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  .cmp .row.h .c2{color:var(--or);font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  .cmp .yes{color:var(--or);font-weight:700}
+  .cmp .no{color:#56627a}
+  @media(max-width:560px){.cmp .row{grid-template-columns:1fr 58px 72px}.cmp .row>div{padding:12px 10px}.cmp .feat{font-size:.84rem}}
+
+  /* FINAL CTA */
+  .finalcta{text-align:center;background:radial-gradient(600px 300px at 50% 0,rgba(232,176,75,.12),transparent 60%),linear-gradient(180deg,#11192a,#0a0f1a);border:1px solid var(--line);border-radius:20px;padding:56px 30px}
+  .finalcta h2{font-size:clamp(1.9rem,4.6vw,2.9rem);margin-bottom:12px}
+  .finalcta p{color:var(--txt2);margin-bottom:26px;font-size:1.05rem}
 </style>
 </head>
 <body>
@@ -542,6 +562,28 @@
   </div>
 </section>
 
+<!-- COMPARATIF -->
+<section>
+  <div class="shead">
+    <span class="eyebrow">Gratuit ou complet</span>
+    <h2>Pourquoi passer à la formation complète</h2>
+    <p>L'académie gratuite t'explique le métier. La formation te le fait maîtriser, en vidéo, et t'apprend à organiser tes propres parties.</p>
+  </div>
+  <div class="wrap">
+    <div class="cmp">
+      <div class="row h"><div class="feat">Ce que tu obtiens</div><div class="c1">Académie gratuite</div><div class="c2">Formation complète</div></div>
+      <div class="row"><div class="feat">Comprendre le métier (la théorie)</div><div class="c1 yes">✓</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Les gestes filmés en gros plan et au ralenti</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Des exercices guidés pour t'entraîner</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Le kit imprimable (13 fiches)</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Monter et animer tes soirées cash game et tournoi</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">L'art de te faire tiper</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Ta correction perso et ton certificat signé</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+      <div class="row"><div class="feat">Initiation à l'Omaha et stage à Malte</div><div class="c1 no">✗</div><div class="c2 yes">✓</div></div>
+    </div>
+  </div>
+</section>
+
 <!-- POURBOIRE -->
 <section id="pourboire">
   <div class="wrap">
@@ -713,6 +755,18 @@
     <div class="qa"><h4>Combien de temps pour tout suivre ?</h4><p>7 à 8 heures de vidéo, à ton rythme, avec un accès à vie. La technique, elle, se travaille un peu chaque jour.</p></div>
     <div class="qa"><h4>C'est légal d'organiser des parties chez moi ?</h4><p>Entre amis, sans prendre de commission et avec des montants raisonnables, oui. Un module entier est consacré à ce cadre.</p></div>
     <div class="qa"><h4>Quelle différence entre les formules ?</h4><p>Le contenu vidéo est le même. Aux formules Pro et Maître, j'ajoute ta correction perso, le certificat, l'Omaha et le tarif réduit pour le stage à Malte.</p></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="wrap">
+    <div class="finalcta">
+      <span class="eyebrow">Ta table t'attend</span>
+      <h2>Prêt à tenir ta table comme un pro ?</h2>
+      <p>Rejoins la formation et deviens le croupier de tes parties.</p>
+      <a href="#tarifs" class="btn btn-or">Voir les formules</a>
+    </div>
   </div>
 </section>
 
