@@ -227,6 +227,17 @@
   .mbody .ex{background:rgba(232,176,75,.06);border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin-top:16px;color:var(--txt);font-size:.92rem}
   .mbody .ex b{color:var(--or);font-family:'Oswald',sans-serif}
   .mbody .fiche-tag{display:inline-block;margin-top:14px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:11px;color:var(--txt2);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:6px 13px}
+  .mbody .steps{list-style:none;padding:0;margin:4px 0 6px}
+  .mbody .steps li{padding:11px 0;border-top:1px dashed rgba(255,255,255,.08);color:var(--txt2);font-size:.94rem;line-height:1.6}
+  .mbody .steps li:before{display:none}
+  .mbody .steps li:first-child{border-top:none}
+  .mbody .steps li b{color:var(--or2);font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.2px}
+  .mbody .protip{background:rgba(59,130,246,.09);border:1px solid rgba(59,130,246,.28);border-radius:10px;padding:13px 16px;margin-top:16px;font-size:.92rem;color:var(--txt);line-height:1.6}
+  .mbody .protip b{color:#85b4ff;font-family:'Oswald',sans-serif}
+  .mbody .errs{margin-top:14px;font-size:.92rem}
+  .mbody .errs>b{color:#ff9b9b;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:12px}
+  .mbody .errs ul{margin-top:6px}
+  .mbody .errs li:before{content:"\2715";color:#ff9b9b;font-size:.72rem;top:8px}
   .phint{text-align:center;color:var(--txt3);font-size:.86rem;font-family:'Oswald',sans-serif;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
   @media(max-width:560px){.mbody{padding-left:28px}}
 </style>
@@ -302,9 +313,17 @@
       <details class="mod"><summary><div class="mn">M1</div><div class="mt"><b>Le mélange pro</b><span>Wash, riffle silencieux, strip, coupe à une main.</span></div><div class="md">~45 min</div><div class="chev">▸</div></summary>
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
-          <ul><li>Randomiser vraiment un jeu avec le wash, obligatoire sur un jeu neuf</li><li>Enchaîner riffle, strip, riffle, coupe, propre et bas sur le tapis</li><li>Couper à une main et placer la cut card pour ne rien exposer</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le wash : le seul geste qui casse vraiment l'ordre des cartes</li><li>Le riffle et le strip : rester bas, sans jamais flasher</li><li>La coupe à une main et la cut card</li><li>La séquence type d'un croupier</li></ul>
+          <ul><li>Randomiser réellement un jeu, neuf ou déjà joué</li><li>Enchaîner un mélange complet propre, bas et silencieux</li><li>Couper à une main et protéger la dernière carte</li></ul>
+          <h5>La leçon en détail</h5>
+          <ul class="steps">
+            <li><b>Le wash, le vrai mélange.</b> On étale les 52 cartes faces cachées et on les brasse à plat en larges cercles, 5 à 10 secondes. C'est le seul geste qui casse vraiment l'ordre d'un jeu neuf ou ordonné. Sans lui, les cartes gardent la trace de la donne précédente. Les mains restent à plat, on ne soulève rien.</li>
+            <li><b>Le riffle shuffle.</b> On coupe le paquet en deux, une moitié par main, et on entrelace les cartes en relâchant les pouces. On en fait deux. Le secret : le paquet ne décolle jamais du tapis, donc personne ne voit une carte. Pas de pont aérien façon cinéma, c'est joli mais ça expose le jeu.</li>
+            <li><b>Le strip, le box.</b> Entre les deux riffles, on prend de petits paquets par le dessus qu'on repose les uns sur les autres. Ça casse les séquences de cartes restées collées. Trois ou quatre paquets suffisent.</li>
+            <li><b>La coupe à une main.</b> On pose le jeu, on soulève la moitié supérieure d'une seule main, on la dépose à côté, on remonte le reste par-dessus. C'est le geste qui te fait passer pour un pro. Juste avant de distribuer, la cut card glisse sous le paquet et masque la carte du dessous.</li>
+          </ul>
+          <p><b>La séquence à graver :</b> riffle, strip, riffle, coupe. Le wash en plus à chaque ouverture de jeu.</p>
+          <div class="protip"><b>L'astuce de pro :</b> entraîne-toi à mélanger devant la télé, sans regarder tes mains. Le jour où tu n'as plus besoin des yeux pour mélanger bas et propre, tu peux surveiller la table pendant que tu mélanges. C'est exactement ce qui sépare le croupier du joueur qui distribue.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Le pont aérien qui expose les cartes</li><li>Oublier le wash sur un jeu neuf</li><li>La coupe hésitante à deux mains</li></ul></div>
           <div class="ex"><b>Ton exercice :</b> mélange complet en moins de 15 secondes, sans qu'une seule carte se retourne. Filme-toi de dessus pour vérifier que tu restes bas.</div>
           <span class="fiche-tag">Fiche : la séquence de mélange</span>
         </div>
@@ -313,10 +332,17 @@
       <details class="mod"><summary><div class="mn">M2</div><div class="mt"><b>Le pitch parfait</b><span>Distribuer vite et régulier, sans jamais flasher une carte.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
-          <ul><li>Envoyer une carte qui glisse à plat, sans qu'elle se retourne</li><li>Distribuer dans le bon ordre, depuis la small blind</li><li>Garder le paquet bas pour ne jamais montrer une carte</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>La prise du paquet et l'envoi de la carte</li><li>L'ordre de distribution, dans le sens horaire</li><li>Rester bas et fermé</li><li>Le deal à une main, et pourquoi il est interdit en festival</li></ul>
-          <div class="ex"><b>Ton exercice :</b> la corbeille. Pitche les cartes une à une dans une corbeille à deux mètres jusqu'à 10 sur 10, puis vise des cibles plus petites.</div>
+          <ul><li>Envoyer une carte qui glisse à plat, sans qu'elle se retourne</li><li>Distribuer vite et régulier, dans le bon ordre</li><li>Ne jamais flasher une carte du talon</li></ul>
+          <h5>La leçon en détail</h5>
+          <ul class="steps">
+            <li><b>La prise et l'envoi.</b> Le paquet dans la main gauche, légèrement incliné vers toi. Le pouce droit fait glisser la carte du dessus et l'envoie d'un petit coup de poignet, à plat. La carte glisse sur le tapis, elle ne vole pas. Si elle vole, elle se retourne et tu exposes la carte. Tout est dans le poignet, pas dans le bras.</li>
+            <li><b>L'ordre de distribution.</b> On commence toujours par le joueur à gauche du bouton, la small blind, et on tourne dans le sens horaire. Une carte à chacun, on fait le tour, puis on recommence pour la deuxième. Jamais deux cartes d'un coup au même joueur.</li>
+            <li><b>Rester bas et fermé.</b> La main gauche reste basse, le paquet incliné vers toi, jamais vers la table. Un paquet trop haut, et les joueurs attentifs lisent la carte du dessous. C'est la faute qui casse une partie.</li>
+            <li><b>Le deal à une main.</b> Ce geste stylé où on envoie la carte d'un revers impressionne en soirée, mais il est interdit en festival. Apprends d'abord le pitch propre à deux mains. Le style viendra quand le geste de base sera automatique.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> le pitch se travaille des heures, mais sans table ni joueurs. Pitche dans une corbeille, puis dans des verres. La régularité prime sur la vitesse : un croupier régulier paraît toujours plus rapide qu'un croupier qui se précipite et rate.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>La carte qui vole et se retourne</li><li>Le paquet tenu trop haut, cartes visibles</li><li>Sauter un joueur ou donner deux cartes d'un coup</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> la corbeille. Pitche les cartes une à une dans une corbeille à deux mètres jusqu'à 10 sur 10, puis vise des cibles plus petites (des verres).</div>
           <span class="fiche-tag">Fiche : le pitch, 3 exercices</span>
         </div>
       </details>
@@ -324,9 +350,16 @@
       <details class="mod"><summary><div class="mn">M3</div><div class="mt"><b>Les jetons</b><span>Couper, compter d'un coup d'œil, faire la monnaie, pousser le pot.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
-          <ul><li>Lire une table d'un regard grâce au code couleur</li><li>Couper et compter les jetons par paquets de 5 et de 20</li><li>Faire la monnaie et pousser le pot proprement</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le code couleur et les valeurs</li><li>Le chip cutting, la compétence reine du métier</li><li>Faire la monnaie, tout à la vue de la table</li><li>Pousser le pot d'un geste net</li></ul>
+          <ul><li>Lire une table d'un seul regard</li><li>Couper et compter les jetons sans recompter un par un</li><li>Faire la monnaie et pousser le pot sans erreur</li></ul>
+          <h5>La leçon en détail</h5>
+          <ul class="steps">
+            <li><b>Le code couleur.</b> Chaque valeur a sa couleur. La convention la plus courante : blanc 1, rouge 5, vert 25, noir 100, violet 500, jaune 1000. Chez toi tu choisis tes valeurs, mais tu gardes le même code toute la soirée et tu l'affiches sur la table.</li>
+            <li><b>Le chip cutting.</b> C'est le geste reine du métier. On détache d'une pile des petits paquets de cinq, tous de la même hauteur, et on compte cinq, dix, quinze, vingt. Avec l'habitude, l'œil reconnaît une pile de cinq sans compter. Un croupier qui compte vite fait gagner du temps à toute la table.</li>
+            <li><b>Faire la monnaie.</b> Règle absolue : tout se passe sur la table, à la vue de tous, jamais dans les mains au-dessus du rack. On annonce le change, on pose les jetons reçus, on les compte à voix haute, puis on rend. Cette transparence te protège autant qu'elle protège le joueur.</li>
+            <li><b>Pousser le pot.</b> En fin de main, on rassemble les mises au centre, empilées par couleur pour que le pot reste lisible, et une fois la main vraiment terminée, on pousse le pot d'un geste net et complet. Aucun jeton ne traîne, et on ne pousse jamais avant la fin de la main.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> range ton rack du plus petit au plus grand, toujours pareil. Ton cerveau finit par savoir où est chaque dénomination sans regarder. Tu rends la monnaie et tu prélèves sans quitter la table des yeux.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Compter jeton par jeton, beaucoup trop lent</li><li>Faire la monnaie dans les mains, hors de vue</li><li>Pousser un pot avant la fin de la main</li></ul></div>
           <div class="ex"><b>Ton exercice :</b> cutting chronométré, des paquets de 5 propres en moins de 5 secondes. Puis fais la monnaie d'un jeton de 100 de trois façons différentes.</div>
           <span class="fiche-tag">Fiche : valeurs des jetons et code couleur</span>
         </div>
@@ -335,10 +368,21 @@
       <details class="mod"><summary><div class="mn">M4</div><div class="mt"><b>Le style et l'art du pourboire</b><span>Le show qui impressionne, et comment se faire tiper sans quémander.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
-          <ul><li>Comprendre comment un croupier se fait tiper</li><li>Appliquer les 5 leviers qui donnent envie de te récompenser</li><li>Encaisser un pourboire avec classe, et ajouter un peu de show</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>C'est quoi un pourboire au poker</li><li>La règle d'or : on ne quémande jamais</li><li>Les 5 leviers : zéro faute, vitesse, ambiance, calme, style</li><li>L'étiquette quand on te tipe, et quelques chip tricks</li></ul>
-          <div class="ex"><b>Ton exercice :</b> deale une main à deux potes en appliquant les 5 leviers, puis demande-leur s'ils auraient eu envie de te tiper.</div>
+          <ul><li>Comprendre comment un croupier se fait tiper</li><li>Provoquer le pourboire par le service, jamais en le demandant</li><li>Encaisser proprement et ajouter le show qui marque les esprits</li></ul>
+          <h5>La leçon en détail</h5>
+          <p>Dans une vraie salle, le croupier touche un petit salaire de base et l'essentiel de ses revenus vient des pourboires. Quand un joueur gagne un pot, il pousse un ou deux jetons vers toi pour te remercier. Quand tu deals un SNG entre potes, c'est pareil : on te tipe parce que tu rends la soirée meilleure.</p>
+          <p><b>La règle numéro un : on ne demande jamais un pourboire.</b> Un croupier qui quémande, c'est mort, plus personne ne tipe. Le pourboire se mérite. Voici les 5 leviers qui le déclenchent :</p>
+          <ul class="steps">
+            <li><b>1. Zéro faute.</b> Un croupier qui ne se trompe jamais sur le pot ou les blindes inspire confiance, et on récompense la confiance.</li>
+            <li><b>2. La vitesse.</b> Plus tu deals vite et proprement, plus il y a de mains, donc plus d'occasions d'être tipé. Bouge le bouton tout de suite entre les mains.</li>
+            <li><b>3. L'ambiance.</b> Un sourire, le prénom des joueurs, un mot quand quelqu'un rafle un gros pot. On tipe celui qui rend le moment agréable.</li>
+            <li><b>4. Le calme.</b> Gérer un litige avec sang-froid gagne le respect de toute la table, et le respect se transforme en jetons.</li>
+            <li><b>5. Le style.</b> Un mélange fluide, un beau pitch, un chip trick au bon moment. Le show donne envie de récompenser.</li>
+          </ul>
+          <p><b>L'étiquette quand on te tipe :</b> tu remercies d'un mot court, tu tapes une fois le jeton sur la table, tu le ranges à part, puis tu pousses le reste des gains. On ne mélange jamais le pourboire avec le pot, et on ne fait jamais un grand cirque.</p>
+          <div class="protip"><b>L'astuce de pro :</b> un seul chip trick, fait au bon moment, vaut mieux que dix enchaînés qui ralentissent la table. Maîtrise le chip shuffle et sors-le quand un joueur réfléchit, jamais quand c'est à toi d'agir.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Sous-entendre lourdement que tu attends un pourboire</li><li>Mélanger le pourboire avec le pot du joueur</li><li>En faire trop avec les chip tricks au mauvais moment</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> deale une main à deux potes en appliquant les 5 leviers, puis demande-leur s'ils auraient eu envie de te tiper. Le retour direct vaut tous les conseils.</div>
           <span class="fiche-tag">Fiche : les 5 leviers du pourboire</span>
         </div>
       </details>
@@ -351,8 +395,16 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Conduire une main complète sans t'arrêter pour réfléchir</li><li>Gérer le bouton, les blindes et le tour de parole</li><li>Mener le burn and turn et conduire un showdown sans erreur</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le bouton et les blindes</li><li>La distribution et le premier à parler</li><li>Les tours d'enchères, et stopper un string bet</li><li>Le burn and turn : flop, turn, river</li><li>Le showdown et l'ordre de dévoilement</li></ul>
+          <h5>La leçon en détail</h5>
+          <ul class="steps">
+            <li><b>Le bouton et les blindes.</b> Tout part du bouton, qui désigne le donneur et tourne d'un siège à chaque main. Le joueur à sa gauche met la small blind, le suivant la big blind. On vérifie que les deux blindes sont posées avant de distribuer. Pas de blinde, pas de main.</li>
+            <li><b>La distribution.</b> Deux cartes fermées à chacun, une à la fois, depuis la small blind, sens horaire. Le premier à parler en préflop est le joueur à gauche de la big blind, le under the gun.</li>
+            <li><b>Les tours d'enchères.</b> Tu suis l'action, tu annonces à qui c'est de parler, tu vérifies que les mises sont valides. Attention au string bet, la mise en deux gestes, qui est interdite : tu arrêtes le joueur tout de suite. En fin de tour, tu rassembles les mises au centre.</li>
+            <li><b>Le burn and turn.</b> Avant chaque carte commune, tu brûles une carte face cachée, puis tu dévoiles : trois cartes pour le flop, une pour le turn, une pour la river. Brûler protège contre une carte marquée et standardise le geste.</li>
+            <li><b>Le showdown.</b> S'il y a eu une mise à la river, le dernier à avoir misé ou relancé montre en premier. Sinon, on montre dans le sens horaire à partir du bouton. Tu lis les mains, tu annonces la meilleure combinaison, tu pousses le pot. Égalité, on partage proprement.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> garde toujours une longueur d'avance dans ta tête. Pendant que le joueur réfléchit, tu sais déjà qui parle après lui et combien il doit suivre. Une table fluide, c'est un croupier qui anticipe, pas un croupier qui suit.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Oublier de brûler une carte</li><li>Distribuer alors qu'une blinde manque</li><li>Te tromper sur qui montre en premier au showdown</li></ul></div>
           <div class="ex"><b>Ton exercice :</b> deale trois mains en solo, à voix haute, comme s'il y avait des joueurs, sans jamais t'arrêter sur l'étape suivante.</div>
           <span class="fiche-tag">Fiche : l'enchaînement d'une main</span>
         </div>
@@ -361,10 +413,18 @@
       <details class="mod"><summary><div class="mn">M6</div><div class="mt"><b>Les annonces et la voix</b><span>Annoncer clair, au bon moment, en français et en anglais.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
-          <ul><li>Annoncer l'action pour que toute la table suive</li><li>Signaler au floor et appeler le superviseur au bon moment</li><li>Basculer en anglais pour les festivals</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Annoncer l'action : parole à, relance, suit, tapis</li><li>Signaler une place libre, un joueur en jeu</li><li>Annoncer les montants et la taille du pot</li><li>Le lexique bilingue français et anglais</li></ul>
-          <div class="ex"><b>Ton exercice :</b> deale une main en t'enregistrant, puis réécoute. On doit comprendre qui parle et combien, sans voir la table.</div>
+          <ul><li>Rythmer la table avec ta voix pour que tout le monde suive</li><li>Signaler au floor et appeler le superviseur au bon moment</li><li>Basculer en anglais pour les festivals</li></ul>
+          <h5>La leçon en détail</h5>
+          <p>La voix du croupier rythme la table. Une table où le dealer parle bien est une table qui ne se dispute pas. On annonce qui doit parler, et on répète chaque décision pour que tout le monde suive.</p>
+          <ul class="steps">
+            <li><b>Annoncer l'action.</b> Parole à toi pour désigner le joueur. Relance à tel montant. Suit pour un call, se couche pour un fold, tapis pour un all-in avec le montant total. Tu articules, tu montres les jetons, tu confirmes avant de continuer.</li>
+            <li><b>Signaler au floor.</b> Tu es les yeux de la salle. Place libre quand un siège se libère, joueur en jeu quand quelqu'un arrive. Ces annonces tiennent la liste d'attente à jour et gardent les tables pleines.</li>
+            <li><b>Appeler le floor.</b> Un seul mot, Floor, au moindre litige ou doute sur une règle. Appeler le superviseur n'est pas une faiblesse, c'est la bonne procédure. Mieux vaut un floor appelé pour rien qu'une mauvaise décision prise seul.</li>
+            <li><b>Le lexique bilingue.</b> En festival, tout se dit en anglais : call, raise, all-in, fold, action on, seat open, showdown. Tu dois basculer d'une langue à l'autre naturellement.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> parle un cran plus fort que ce qui te semble naturel, et juste un peu plus lentement sur les chiffres. Un montant mal entendu, c'est une mise contestée. La clarté évite 90 % des litiges avant même qu'ils existent.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Annoncer trop bas ou trop tard</li><li>Oublier d'annoncer le montant d'une relance</li><li>Hésiter à appeler le floor par fierté</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> deale une main en t'enregistrant au micro, puis réécoute. On doit comprendre qui parle et combien, sans voir la table.</div>
           <span class="fiche-tag">Fiche : les annonces du dealer (FR / EN)</span>
         </div>
       </details>
@@ -373,9 +433,17 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Garder un pot toujours lisible</li><li>Créer et séparer les side pots sans te tromper</li><li>Attribuer les pots dans le bon ordre au showdown</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le pot toujours clair</li><li>Le cas simple, un seul pot</li><li>Le side pot expliqué simplement</li><li>La méthode pas à pas, et le showdown avec side pots</li></ul>
-          <div class="ex"><b>Ton exercice :</b> pose trois tapis différents (30, 80 et 150) qui font tapis, construis le pot principal et les side pots à la main, puis vérifie le total.</div>
+          <h5>La leçon en détail</h5>
+          <p>La compétence qui sépare l'amateur du pro, c'est la gestion du pot. Après chaque tour, on amène les mises au centre, empilées par couleur. Un pot en désordre, c'est la porte ouverte aux erreurs et aux disputes.</p>
+          <ul class="steps">
+            <li><b>Le principe du side pot.</b> Un joueur ne peut gagner que ce qu'il a pu suivre. S'il fait tapis pour moins que les autres, on crée un pot principal qu'il peut gagner, et un pot annexe alimenté par le surplus des autres, qu'il ne peut pas toucher.</li>
+            <li><b>La méthode pas à pas.</b> On avance d'abord les mises de tout le monde à hauteur du plus petit tapis : ça forme le pot principal. Le surplus des joueurs plus fortunés se met visiblement à part, c'est le side pot. S'il reste un tapis intermédiaire, on recommence pour un deuxième side pot.</li>
+            <li><b>L'attribution.</b> Au showdown, on attribue du side pot vers le pot principal, dans cet ordre. Le joueur à tapis prend le pot principal s'il gagne, mais jamais un side pot.</li>
+          </ul>
+          <p><b>Exemple :</b> tapis de 30, 80 et 150 tous all-in. Pot principal 30 x 3 = 90. Side pot 1 (80 - 30) x 2 = 100. Side pot 2 (150 - 80) x 1 = 70. La somme retombe sur le total misé, c'est ta vérification.</p>
+          <div class="protip"><b>L'astuce de pro :</b> physiquement, sépare les pots sur le tapis avec un espace net entre chaque pile. Tant que tu peux les montrer du doigt, tu ne te trompes pas. C'est quand tout est mélangé en un seul tas qu'on fait des erreurs.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Tout mettre dans un seul pot avec des tapis différents</li><li>Donner un side pot au joueur à tapis</li><li>Te tromper d'ordre d'attribution au showdown</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> pose trois tapis différents (30, 80 et 150) qui font tapis, construis le pot principal et les side pots à la main, puis vérifie le total. Refais-le avec quatre joueurs.</div>
           <span class="fiche-tag">Fiche : side pots, la méthode en 3 étapes</span>
         </div>
       </details>
@@ -384,9 +452,17 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Identifier et corriger un misdeal</li><li>Réagir à une carte exposée et à une mise contestée</li><li>Désamorcer un litige en gardant ton autorité</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le principe : la neutralité totale</li><li>Le misdeal et la carte exposée</li><li>La mise contestée et le tricheur entre potes</li><li>Garder l'autorité par le calme</li></ul>
-          <div class="ex"><b>Ton exercice :</b> fais-toi raconter les pires litiges de tes potes, et entraîne-toi à les arbitrer à voix haute, calmement, en moins de 30 secondes.</div>
+          <h5>La leçon en détail</h5>
+          <p>Ce qui fait un bon croupier, ce n'est pas de ne jamais avoir de problème, c'est de réagir calmement et de la même façon à chaque fois. La règle de base : neutralité totale, tu ne prends jamais parti.</p>
+          <ul class="steps">
+            <li><b>Le misdeal.</b> Donne ratée qu'on annule : mauvais nombre de cartes, première carte au mauvais joueur, carte exposée par le croupier. On reprend et on redistribue. Mais dès qu'un joueur a agi sur sa main, on ne peut plus annuler, on continue.</li>
+            <li><b>La carte exposée.</b> Si tu exposes une carte en distribuant, en général elle devient la carte brûlée et le joueur en reçoit une neuve. Si un joueur retourne sa propre carte par maladresse, il la garde, c'est sa faute. Même règle pour tout le monde, sans improviser.</li>
+            <li><b>La mise contestée.</b> Quand un montant est contesté, tu ne touches plus au pot. Tu reconstitues la vérité avec ce qui est visible et les déclarations cohérentes. Tant que ce n'est pas clair, rien ne bouge.</li>
+            <li><b>Le tricheur entre potes.</b> Ton rôle n'est pas de dénoncer, c'est de rendre la triche impossible : mises devant les joueurs, pot au centre bien empilé, cartes protégées, rien dans les mains hors de vue. La transparence tue la triche.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> face à un conflit qui monte, baisse la voix au lieu de la hausser. Quand le croupier reste posé et parle doucement, les joueurs se calquent sur lui. L'autorité vient du calme, jamais du rapport de force.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Continuer à toucher le pot pendant un litige</li><li>Prendre parti pour un joueur</li><li>Annuler une main alors que l'action a déjà avancé</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> fais-toi raconter les pires litiges de tes potes, et entraîne-toi à les arbitrer à voix haute, calmement, en moins de 30 secondes chacun.</div>
           <span class="fiche-tag">Fiche : litiges et misdeals, arbre de décision</span>
         </div>
       </details>
@@ -399,8 +475,16 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Préparer ta partie, du matériel jusqu'à la première main</li><li>Fixer des blindes et une cave qui tiennent la route</li><li>Tenir une caisse claire et rester dans le cadre amical</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Le matériel indispensable</li><li>Choisir les blindes et la cave</li><li>La caisse et l'argent, en toute transparence</li><li>Le cadre entre amis, et la mise en place</li></ul>
+          <h5>La leçon en détail</h5>
+          <p>Une soirée qui démarre dans le flou finit en dispute. On prépare tout avant que les gens arrivent.</p>
+          <ul class="steps">
+            <li><b>Le matériel.</b> Un tapis (ça change tout pour le pitch), un set de jetons avec au moins quatre couleurs, deux jeux de cartes en plastique (un en jeu, un qui mélange), une cut card, un bouton dealer, et de quoi tenir la caisse.</li>
+            <li><b>Les blindes et la cave.</b> On fixe les enjeux avant l'arrivée. La règle : la cave doit valoir au moins 50 fois la grosse blinde, sinon le jeu n'est pas intéressant. On annonce le minimum et le maximum de cave, pareil pour tous.</li>
+            <li><b>La caisse.</b> Une seule personne la tient, idéalement toi. Chaque joueur échange son argent contre des jetons en arrivant, devant tout le monde, et on note qui a pris combien. En partant, on rend l'argent contre les jetons restants. Tout est noté, tout est transparent.</li>
+            <li><b>Le cadre entre amis.</b> On parle de parties privées où l'hôte ne prend aucune commission et ne se rémunère pas sur le jeu. Tu joues pour le plaisir, entre gens qui se connaissent, avec des montants raisonnables pour ton groupe.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> prépare la cave de chaque joueur à l'avance, en piles identiques comptées. Quand les gens arrivent, tu poses, tu encaisses, tu notes, et la partie démarre en deux minutes au lieu de vingt.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Une cave trop petite par rapport aux blindes</li><li>Ne pas noter qui a acheté combien de jetons</li><li>Laisser plusieurs personnes toucher à la caisse</li></ul></div>
           <div class="ex"><b>Ton exercice :</b> prépare une vraie mise en place complète, prends-la en photo, et fixe par écrit tes blindes et ta cave min et max pour ta prochaine soirée.</div>
           <span class="fiche-tag">Fiche : checklist matériel + feuille de caisse</span>
         </div>
@@ -410,8 +494,15 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Choisir une structure qui dure le temps voulu</li><li>Lancer un sit and go et gérer les changements de niveau</li><li>Organiser la table finale et les paiements</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Cash game ou tournoi, la différence</li><li>La structure, le cœur du tournoi</li><li>Lancer le SNG, recaves et add-on</li><li>Table finale et grille de paiements</li></ul>
+          <h5>La leçon en détail</h5>
+          <ul class="steps">
+            <li><b>Cash game ou tournoi.</b> En cash game, on entre et on sort quand on veut, les jetons valent de l'argent. En tournoi (un SNG est un tournoi sur une table qui démarre dès qu'on est au complet), tout le monde paie le même droit d'entrée, reçoit le même tapis, et joue jusqu'au dernier survivant. Les jetons ne valent plus d'argent, c'est le classement qui paie.</li>
+            <li><b>La structure.</b> Ce qui fait qu'un tournoi dure une heure ou cinq, c'est le tapis de départ, le niveau des blindes et la durée de chaque niveau. Plus le tapis est gros et les niveaux longs, plus ça dure. Tu as trois structures clé en main : rapide (30 min), moyenne (60), longue (90 et plus).</li>
+            <li><b>Lancer et faire tourner.</b> Chacun pose son droit d'entrée, tu distribues le même tapis à tous, tu lances le timer. À chaque fin de niveau, tu annonces clairement le nouveau niveau et tu ajustes les blindes. Une erreur de niveau fausse toute la main.</li>
+            <li><b>Recaves et table finale.</b> Tu peux autoriser les recaves et un add-on pendant les premiers niveaux, à décider et annoncer avant de commencer. Quand il reste les derniers joueurs, c'est la table finale. Pour les gains, on fixe d'avance les places payées, par exemple 50 / 30 / 20 sur un podium.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> adapte la structure au temps que tes potes ont vraiment. Un tournoi qui déborde de deux heures sur un soir de semaine, c'est des joueurs qui partent avant la fin. Mieux vaut une structure rapide bien finie qu'une longue jamais terminée.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>Des niveaux trop courts avec un petit tapis, le tournoi finit au flip</li><li>Oublier d'annoncer un changement de niveau</li><li>Ne pas fixer les paiements avant de commencer</li></ul></div>
           <div class="ex"><b>Ton exercice :</b> choisis une des trois structures du kit et simule les trois premiers niveaux avec un timer, en annonçant chaque changement à voix haute.</div>
           <span class="fiche-tag">Fiche : 3 structures de blindes + grille de gains</span>
         </div>
@@ -421,9 +512,17 @@
         <div class="mbody">
           <h5>Ce que tu vas savoir faire</h5>
           <ul><li>Donner à ta soirée un vrai rythme, de l'accueil à la fin</li><li>Gérer les egos et l'alcool sans casser l'ambiance</li><li>Mettre les débutants à l'aise et animer ta table</li></ul>
-          <h5>Au programme</h5>
-          <ul><li>Tu n'es pas qu'un distributeur de cartes</li><li>Le déroulé d'une bonne soirée</li><li>Gérer les egos et l'alcool</li><li>Accueillir les débutants, et le rôle d'animateur</li></ul>
-          <div class="ex"><b>Ton exercice :</b> écris le déroulé type de ta prochaine soirée : heure d'accueil, explication des règles, première main, pause, heure de fin.</div>
+          <h5>La leçon en détail</h5>
+          <p>Le matériel et la technique, c'est la moitié du job. L'autre moitié, c'est l'ambiance. Le croupier-hôte, c'est celui qui fait que les gens repartent en disant qu'il faut remettre ça.</p>
+          <ul class="steps">
+            <li><b>Le déroulé.</b> Une bonne soirée a un rythme : on accueille, on installe, on rappelle les règles maison en deux minutes, on joue, on fait une pause, et on termine sur la table finale ou une heure de fin annoncée. Annoncer une heure de fin évite la partie qui s'éternise et finit mal.</li>
+            <li><b>Gérer les egos et l'alcool.</b> Deux pièges : celui qui se vexe d'avoir perdu, et l'alcool qui monte. Tu gardes le ton léger, tu désamorces avec humour, tu ne laisses jamais un litige s'envenimer. Si quelqu'un est trop chaud, tu ralentis, tu fais une pause, tu proposes à manger.</li>
+            <li><b>Les débutants.</b> C'est toi qui les protèges. Tu expliques calmement, tu ne les presses pas, tu rappelles les règles sans condescendance. Un débutant bien accueilli revient, un débutant humilié gâche la soirée.</li>
+            <li><b>Le rôle d'animateur.</b> Quand tu deals, tu es au centre. Un mot sur un beau coup, une annonce claire, un chip trick au bon moment, le prénom des gens. C'est ça qui fait de toi le croupier qu'on réclame.</li>
+          </ul>
+          <div class="protip"><b>L'astuce de pro :</b> ta soirée se joue dans les dix premières minutes. Un accueil chaleureux, des règles claires et une première main lancée vite, et toute la soirée roule. Bâclé au départ, tu passes le reste du temps à rattraper.</div>
+          <div class="errs"><b>Les erreurs à éviter</b><ul><li>La partie sans heure de fin qui s'éternise</li><li>Le débutant largué que personne n'aide</li><li>L'hôte qui joue son ego au lieu d'animer</li></ul></div>
+          <div class="ex"><b>Ton exercice :</b> écris le déroulé type de ta prochaine soirée : heure d'accueil, explication des règles, première main, pause, heure de fin. Garde-le sous la main le jour J.</div>
           <span class="fiche-tag">Fiche : déroulé type + règles maison</span>
         </div>
       </details>
