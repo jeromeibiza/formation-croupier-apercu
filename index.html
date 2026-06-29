@@ -208,6 +208,27 @@
   .trust .ti b{font-family:'Oswald',sans-serif;font-weight:600;font-size:1rem;display:block}
   .trust .ti span{color:var(--txt2);font-size:.86rem}
   @media(max-width:680px){.trust{grid-template-columns:1fr}}
+
+  /* PROGRAMME ACCORDEON */
+  details.mod{border-top:1px solid rgba(255,255,255,.04)}
+  details.mod:first-of-type{border-top:none}
+  details.mod>summary{display:flex;align-items:center;gap:16px;padding:16px 28px;cursor:pointer;list-style:none}
+  details.mod>summary::-webkit-details-marker{display:none}
+  details.mod>summary::marker{content:""}
+  details.mod>summary:hover{background:rgba(255,255,255,.02)}
+  details.mod .chev{margin-left:auto;color:var(--txt3);transition:.2s;font-size:13px}
+  details.mod[open] .chev{transform:rotate(90deg);color:var(--or)}
+  details.mod[open]>summary{background:rgba(232,176,75,.04)}
+  .mbody{padding:2px 28px 24px 78px}
+  .mbody h5{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1px;font-size:12px;color:var(--or);margin:16px 0 8px}
+  .mbody ul{list-style:none;margin:0}
+  .mbody li{padding:5px 0 5px 18px;position:relative;color:var(--txt2);font-size:.94rem}
+  .mbody li:before{content:"♦";position:absolute;left:0;color:var(--or);font-size:.6rem;top:9px}
+  .mbody .ex{background:rgba(232,176,75,.06);border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin-top:16px;color:var(--txt);font-size:.92rem}
+  .mbody .ex b{color:var(--or);font-family:'Oswald',sans-serif}
+  .mbody .fiche-tag{display:inline-block;margin-top:14px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:11px;color:var(--txt2);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:6px 13px}
+  .phint{text-align:center;color:var(--txt3);font-size:.86rem;font-family:'Oswald',sans-serif;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+  @media(max-width:560px){.mbody{padding-left:28px}}
 </style>
 </head>
 <body>
@@ -273,28 +294,150 @@
   </div>
   <div class="wrap">
 
+    <p class="phint">Clique sur un module pour voir le détail</p>
+
     <div class="partie">
       <div class="ph-head"><div class="pn">1</div><div><h3>Le geste</h3><span class="ps">La technique pro filmée</span></div></div>
-      <div class="mrow"><div class="mn">M1</div><div class="mt"><b>Le mélange pro</b><span>Wash, riffle silencieux, strip, coupe à une main.</span></div><div class="md">~45 min</div></div>
-      <div class="mrow"><div class="mn">M2</div><div class="mt"><b>Le pitch parfait</b><span>Distribuer vite et régulier, sans jamais flasher une carte.</span></div><div class="md">~40 min</div></div>
-      <div class="mrow"><div class="mn">M3</div><div class="mt"><b>Les jetons</b><span>Couper, compter d'un coup d'œil, faire la monnaie, pousser le pot.</span></div><div class="md">~40 min</div></div>
-      <div class="mrow"><div class="mn">M4</div><div class="mt"><b>Le style et l'art du pourboire</b><span>Le show qui impressionne, et comment se faire tiper sans quémander.</span></div><div class="md">~30 min</div></div>
+
+      <details class="mod"><summary><div class="mn">M1</div><div class="mt"><b>Le mélange pro</b><span>Wash, riffle silencieux, strip, coupe à une main.</span></div><div class="md">~45 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Randomiser vraiment un jeu avec le wash, obligatoire sur un jeu neuf</li><li>Enchaîner riffle, strip, riffle, coupe, propre et bas sur le tapis</li><li>Couper à une main et placer la cut card pour ne rien exposer</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le wash : le seul geste qui casse vraiment l'ordre des cartes</li><li>Le riffle et le strip : rester bas, sans jamais flasher</li><li>La coupe à une main et la cut card</li><li>La séquence type d'un croupier</li></ul>
+          <div class="ex"><b>Ton exercice :</b> mélange complet en moins de 15 secondes, sans qu'une seule carte se retourne. Filme-toi de dessus pour vérifier que tu restes bas.</div>
+          <span class="fiche-tag">Fiche : la séquence de mélange</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M2</div><div class="mt"><b>Le pitch parfait</b><span>Distribuer vite et régulier, sans jamais flasher une carte.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Envoyer une carte qui glisse à plat, sans qu'elle se retourne</li><li>Distribuer dans le bon ordre, depuis la small blind</li><li>Garder le paquet bas pour ne jamais montrer une carte</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>La prise du paquet et l'envoi de la carte</li><li>L'ordre de distribution, dans le sens horaire</li><li>Rester bas et fermé</li><li>Le deal à une main, et pourquoi il est interdit en festival</li></ul>
+          <div class="ex"><b>Ton exercice :</b> la corbeille. Pitche les cartes une à une dans une corbeille à deux mètres jusqu'à 10 sur 10, puis vise des cibles plus petites.</div>
+          <span class="fiche-tag">Fiche : le pitch, 3 exercices</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M3</div><div class="mt"><b>Les jetons</b><span>Couper, compter d'un coup d'œil, faire la monnaie, pousser le pot.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Lire une table d'un regard grâce au code couleur</li><li>Couper et compter les jetons par paquets de 5 et de 20</li><li>Faire la monnaie et pousser le pot proprement</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le code couleur et les valeurs</li><li>Le chip cutting, la compétence reine du métier</li><li>Faire la monnaie, tout à la vue de la table</li><li>Pousser le pot d'un geste net</li></ul>
+          <div class="ex"><b>Ton exercice :</b> cutting chronométré, des paquets de 5 propres en moins de 5 secondes. Puis fais la monnaie d'un jeton de 100 de trois façons différentes.</div>
+          <span class="fiche-tag">Fiche : valeurs des jetons et code couleur</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M4</div><div class="mt"><b>Le style et l'art du pourboire</b><span>Le show qui impressionne, et comment se faire tiper sans quémander.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Comprendre comment un croupier se fait tiper</li><li>Appliquer les 5 leviers qui donnent envie de te récompenser</li><li>Encaisser un pourboire avec classe, et ajouter un peu de show</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>C'est quoi un pourboire au poker</li><li>La règle d'or : on ne quémande jamais</li><li>Les 5 leviers : zéro faute, vitesse, ambiance, calme, style</li><li>L'étiquette quand on te tipe, et quelques chip tricks</li></ul>
+          <div class="ex"><b>Ton exercice :</b> deale une main à deux potes en appliquant les 5 leviers, puis demande-leur s'ils auraient eu envie de te tiper.</div>
+          <span class="fiche-tag">Fiche : les 5 leviers du pourboire</span>
+        </div>
+      </details>
     </div>
 
     <div class="partie">
       <div class="ph-head"><div class="pn">2</div><div><h3>Tenir la table</h3><span class="ps">Comme un vrai croupier</span></div></div>
-      <div class="mrow"><div class="mn">M5</div><div class="mt"><b>Mener une main de A à Z</b><span>Du bouton au showdown, sans jamais hésiter.</span></div><div class="md">~50 min</div></div>
-      <div class="mrow"><div class="mn">M6</div><div class="mt"><b>Les annonces et la voix</b><span>Annoncer clair, au bon moment, en français et en anglais.</span></div><div class="md">~30 min</div></div>
-      <div class="mrow"><div class="mn">M7</div><div class="mt"><b>Pots et side pots</b><span>La méthode infaillible quand il y a des tapis, exemples à l'appui.</span></div><div class="md">~40 min</div></div>
-      <div class="mrow"><div class="mn">M8</div><div class="mt"><b>Litiges et misdeals</b><span>Réagir juste, avec calme et autorité.</span></div><div class="md">~30 min</div></div>
+
+      <details class="mod"><summary><div class="mn">M5</div><div class="mt"><b>Mener une main de A à Z</b><span>Du bouton au showdown, sans jamais hésiter.</span></div><div class="md">~50 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Conduire une main complète sans t'arrêter pour réfléchir</li><li>Gérer le bouton, les blindes et le tour de parole</li><li>Mener le burn and turn et conduire un showdown sans erreur</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le bouton et les blindes</li><li>La distribution et le premier à parler</li><li>Les tours d'enchères, et stopper un string bet</li><li>Le burn and turn : flop, turn, river</li><li>Le showdown et l'ordre de dévoilement</li></ul>
+          <div class="ex"><b>Ton exercice :</b> deale trois mains en solo, à voix haute, comme s'il y avait des joueurs, sans jamais t'arrêter sur l'étape suivante.</div>
+          <span class="fiche-tag">Fiche : l'enchaînement d'une main</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M6</div><div class="mt"><b>Les annonces et la voix</b><span>Annoncer clair, au bon moment, en français et en anglais.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Annoncer l'action pour que toute la table suive</li><li>Signaler au floor et appeler le superviseur au bon moment</li><li>Basculer en anglais pour les festivals</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Annoncer l'action : parole à, relance, suit, tapis</li><li>Signaler une place libre, un joueur en jeu</li><li>Annoncer les montants et la taille du pot</li><li>Le lexique bilingue français et anglais</li></ul>
+          <div class="ex"><b>Ton exercice :</b> deale une main en t'enregistrant, puis réécoute. On doit comprendre qui parle et combien, sans voir la table.</div>
+          <span class="fiche-tag">Fiche : les annonces du dealer (FR / EN)</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M7</div><div class="mt"><b>Pots et side pots</b><span>La méthode infaillible quand il y a des tapis, exemples à l'appui.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Garder un pot toujours lisible</li><li>Créer et séparer les side pots sans te tromper</li><li>Attribuer les pots dans le bon ordre au showdown</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le pot toujours clair</li><li>Le cas simple, un seul pot</li><li>Le side pot expliqué simplement</li><li>La méthode pas à pas, et le showdown avec side pots</li></ul>
+          <div class="ex"><b>Ton exercice :</b> pose trois tapis différents (30, 80 et 150) qui font tapis, construis le pot principal et les side pots à la main, puis vérifie le total.</div>
+          <span class="fiche-tag">Fiche : side pots, la méthode en 3 étapes</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M8</div><div class="mt"><b>Litiges et misdeals</b><span>Réagir juste, avec calme et autorité.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Identifier et corriger un misdeal</li><li>Réagir à une carte exposée et à une mise contestée</li><li>Désamorcer un litige en gardant ton autorité</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le principe : la neutralité totale</li><li>Le misdeal et la carte exposée</li><li>La mise contestée et le tricheur entre potes</li><li>Garder l'autorité par le calme</li></ul>
+          <div class="ex"><b>Ton exercice :</b> fais-toi raconter les pires litiges de tes potes, et entraîne-toi à les arbitrer à voix haute, calmement, en moins de 30 secondes.</div>
+          <span class="fiche-tag">Fiche : litiges et misdeals, arbre de décision</span>
+        </div>
+      </details>
     </div>
 
     <div class="partie">
       <div class="ph-head"><div class="pn">3</div><div><h3>Organiser tes parties</h3><span class="ps">Le cœur maison</span></div></div>
-      <div class="mrow"><div class="mn">M9</div><div class="mt"><b>Monter une soirée cash game</b><span>Matériel, valeurs des jetons, cave, caisse, le cadre entre amis.</span></div><div class="md">~40 min</div></div>
-      <div class="mrow"><div class="mn">M10</div><div class="mt"><b>Monter un SNG ou un tournoi</b><span>Structures de blindes clé en main, recaves, table finale, gains.</span></div><div class="md">~45 min</div></div>
-      <div class="mrow"><div class="mn">M11</div><div class="mt"><b>L'hôte et l'ambiance</b><span>Faire de ta partie une vraie expérience qu'on a envie de refaire.</span></div><div class="md">~30 min</div></div>
-      <div class="mrow"><div class="mn">M12</div><div class="mt"><b>Le kit du croupier-hôte</b><span>Toutes les fiches à télécharger et imprimer.</span></div><div class="md">~10 min</div></div>
+
+      <details class="mod"><summary><div class="mn">M9</div><div class="mt"><b>Monter une soirée cash game</b><span>Matériel, valeurs des jetons, cave, caisse, le cadre entre amis.</span></div><div class="md">~40 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Préparer ta partie, du matériel jusqu'à la première main</li><li>Fixer des blindes et une cave qui tiennent la route</li><li>Tenir une caisse claire et rester dans le cadre amical</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Le matériel indispensable</li><li>Choisir les blindes et la cave</li><li>La caisse et l'argent, en toute transparence</li><li>Le cadre entre amis, et la mise en place</li></ul>
+          <div class="ex"><b>Ton exercice :</b> prépare une vraie mise en place complète, prends-la en photo, et fixe par écrit tes blindes et ta cave min et max pour ta prochaine soirée.</div>
+          <span class="fiche-tag">Fiche : checklist matériel + feuille de caisse</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M10</div><div class="mt"><b>Monter un SNG ou un tournoi</b><span>Structures de blindes clé en main, recaves, table finale, gains.</span></div><div class="md">~45 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Choisir une structure qui dure le temps voulu</li><li>Lancer un sit and go et gérer les changements de niveau</li><li>Organiser la table finale et les paiements</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Cash game ou tournoi, la différence</li><li>La structure, le cœur du tournoi</li><li>Lancer le SNG, recaves et add-on</li><li>Table finale et grille de paiements</li></ul>
+          <div class="ex"><b>Ton exercice :</b> choisis une des trois structures du kit et simule les trois premiers niveaux avec un timer, en annonçant chaque changement à voix haute.</div>
+          <span class="fiche-tag">Fiche : 3 structures de blindes + grille de gains</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M11</div><div class="mt"><b>L'hôte et l'ambiance</b><span>Faire de ta partie une vraie expérience qu'on a envie de refaire.</span></div><div class="md">~30 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Donner à ta soirée un vrai rythme, de l'accueil à la fin</li><li>Gérer les egos et l'alcool sans casser l'ambiance</li><li>Mettre les débutants à l'aise et animer ta table</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>Tu n'es pas qu'un distributeur de cartes</li><li>Le déroulé d'une bonne soirée</li><li>Gérer les egos et l'alcool</li><li>Accueillir les débutants, et le rôle d'animateur</li></ul>
+          <div class="ex"><b>Ton exercice :</b> écris le déroulé type de ta prochaine soirée : heure d'accueil, explication des règles, première main, pause, heure de fin.</div>
+          <span class="fiche-tag">Fiche : déroulé type + règles maison</span>
+        </div>
+      </details>
+
+      <details class="mod"><summary><div class="mn">M12</div><div class="mt"><b>Le kit du croupier-hôte</b><span>Toutes les fiches à télécharger et imprimer.</span></div><div class="md">~10 min</div><div class="chev">▸</div></summary>
+        <div class="mbody">
+          <h5>Ce que tu vas savoir faire</h5>
+          <ul><li>Connaître chaque document du kit et son usage</li><li>Préparer ta boîte de jetons pour qu'une soirée se monte en deux minutes</li></ul>
+          <h5>Au programme</h5>
+          <ul><li>La visite complète des 13 fiches</li><li>Lesquelles imprimer et garder toujours sous la main</li></ul>
+          <div class="ex"><b>Ton conseil :</b> imprime la checklist matériel, les valeurs de jetons et les règles maison, et range-les dans ta boîte de jetons. Tout sera prêt à chaque soirée.</div>
+          <span class="fiche-tag">Le kit complet : 13 fiches imprimables</span>
+        </div>
+      </details>
     </div>
 
   </div>
