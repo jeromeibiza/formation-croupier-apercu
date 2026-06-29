@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Kit du croupier-hôte — Jérôme Ibiza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--ink:#1b1f27;--ink2:#444b57;--or:#b8860b;--orbg:#fbf3df;--line:#e3e6ec}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:#0a0e16;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;padding:0 0 60px}
+
+  /* TOOLBAR (écran) */
+  .bar{position:sticky;top:0;z-index:10;background:#070b12;border-bottom:1px solid rgba(255,255,255,.08);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .bar .t{font-family:'Anton',sans-serif;letter-spacing:1.5px;color:#f1f5fc;font-size:1.05rem}
+  .bar .t span{color:#e8b04b}
+  .bar .sub{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:11.5px;color:#9fadc4}
+  .bar button{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:13px;font-weight:600;background:#e8b04b;color:#1a1206;border:none;border-radius:6px;padding:11px 22px;cursor:pointer}
+  .bar button:hover{background:#f3cd86}
+  .hint{max-width:820px;margin:24px auto 6px;color:#9fadc4;font-size:.9rem;text-align:center;padding:0 20px}
+
+  /* FEUILLES */
+  .sheets{max-width:820px;margin:0 auto;padding:18px 20px;display:flex;flex-direction:column;gap:26px}
+  .sheet{background:#fff;border-radius:10px;padding:30px 34px 26px;box-shadow:0 18px 50px rgba(0,0,0,.4)}
+  .sheet .head{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--or);padding-bottom:12px;margin-bottom:18px}
+  .sheet .head .brand{font-family:'Anton',sans-serif;letter-spacing:1.5px;font-size:.95rem;color:var(--ink)}
+  .sheet .head .brand span{color:var(--or)}
+  .sheet .head .no{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;color:var(--ink2)}
+  .sheet h2{font-family:'Anton',sans-serif;letter-spacing:.5px;font-size:1.7rem;text-transform:uppercase;margin-bottom:14px;line-height:1.05}
+  .sheet h3{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.8px;font-size:.95rem;color:var(--or);margin:18px 0 8px}
+  .sheet p{margin-bottom:10px;color:var(--ink2)}
+  .sheet ol,.sheet ul{margin:0 0 10px 0;padding-left:22px}
+  .sheet li{margin:5px 0}
+  .sheet .mono b{color:var(--ink)}
+  .memo{background:var(--orbg);border:1px solid #efdca8;border-radius:8px;padding:12px 16px;margin-top:14px;font-family:'Oswald',sans-serif;letter-spacing:.3px;color:#6b5410}
+  table{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:.94rem}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+  th{background:#f5f1e6;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:12px;color:var(--ink)}
+  .blank{display:inline-block;min-width:90px;border-bottom:1px solid #b9bfca}
+  .foot{margin-top:18px;border-top:1px solid var(--line);padding-top:10px;font-size:11px;color:#97a0ad;display:flex;justify-content:space-between}
+  .checkbox{display:inline-block;width:14px;height:14px;border:1.5px solid var(--ink2);border-radius:3px;margin-right:8px;vertical-align:-2px}
+
+  /* IMPRESSION */
+  @media print{
+    @page{size:A4;margin:14mm}
+    body{background:#fff;padding:0}
+    .bar,.hint{display:none !important}
+    .sheets{max-width:none;margin:0;padding:0;gap:0}
+    .sheet{box-shadow:none;border-radius:0;padding:0;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div>
+    <div class="t">JEROME<span>|</span>IBIZA <span style="color:#9fadc4;font-family:Oswald;font-size:.7em;letter-spacing:2px">· KIT DU CROUPIER-HOTE</span></div>
+    <div class="sub">13 fiches prêtes à imprimer</div>
+  </div>
+  <button onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+</div>
+<p class="hint">Astuce : clique sur « Imprimer », puis choisis « Enregistrer au format PDF » comme imprimante pour obtenir le kit en PDF. Chaque fiche tient sur une page.</p>
+
+<div class="sheets">
+
+  <!-- 1 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 01 / 13</div></div>
+    <h2>La séquence de mélange</h2>
+    <ol>
+      <li><b>Wash</b> : étaler les 52 cartes faces cachées, brasser en cercles 5 à 10 secondes. Obligatoire sur un jeu neuf.</li>
+      <li><b>Riffle</b> : couper en deux, entrelacer, rester bas sur le tapis.</li>
+      <li><b>Strip</b> : prendre de petits paquets par le dessus pour casser les séquences.</li>
+      <li><b>Riffle</b> : un deuxième effeuillage.</li>
+      <li><b>Coupe</b> : couper à une main, glisser la cut card sous le paquet.</li>
+    </ol>
+    <div class="memo">Mémo : riffle, strip, riffle, coupe (wash en plus à l'ouverture).</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 01</span></div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 02 / 13</div></div>
+    <h2>Le pitch : 3 exercices</h2>
+    <ol>
+      <li><b>La corbeille</b> : pitcher les cartes une à une dans une corbeille à 2 mètres. Objectif 10 sur 10.</li>
+      <li><b>Les cibles</b> : viser des verres ou des cases sur un carton, de plus en plus petites.</li>
+      <li><b>Le tour complet</b> : pitcher 2 cartes à 9 positions à vide, régulières, sans qu'aucune ne se retourne.</li>
+    </ol>
+    <div class="memo">Règle d'or : la carte glisse, elle ne vole pas. Paquet bas et incliné vers soi.</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 02</span></div>
+  </section>
+
+  <!-- 3 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 03 / 13</div></div>
+    <h2>Valeurs des jetons et code couleur</h2>
+    <p>Convention de départ la plus répandue (à adapter à ta cave) :</p>
+    <table>
+      <tr><th>Couleur</th><th>Valeur</th><th>Ta valeur</th></tr>
+      <tr><td>Blanc</td><td>1</td><td></td></tr>
+      <tr><td>Rouge</td><td>5</td><td></td></tr>
+      <tr><td>Vert</td><td>25</td><td></td></tr>
+      <tr><td>Noir</td><td>100</td><td></td></tr>
+      <tr><td>Violet</td><td>500</td><td></td></tr>
+      <tr><td>Jaune / orange</td><td>1000</td><td></td></tr>
+    </table>
+    <div class="memo">Compter par paquets de 5, puis par 20 (quatre paquets de 5). Affiche ce code toute la soirée.</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 03</span></div>
+  </section>
+
+  <!-- 4 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 04 / 13</div></div>
+    <h2>L'enchaînement d'une main</h2>
+    <ol>
+      <li>Le bouton tourne d'un siège.</li>
+      <li>Small blind et big blind postées (vérifier).</li>
+      <li>Distribuer 2 cartes fermées, depuis la small blind, sens horaire.</li>
+      <li>Tour préflop (premier à parler : à gauche de la big blind).</li>
+      <li>Rassembler les mises au centre.</li>
+      <li>Burn + flop (3 cartes).</li>
+      <li>Tour d'enchères, rassembler.</li>
+      <li>Burn + turn (1 carte), tour, rassembler.</li>
+      <li>Burn + river (1 carte), dernier tour, rassembler.</li>
+      <li>Showdown : montre en premier le dernier à avoir misé ; sinon, sens horaire depuis le bouton.</li>
+      <li>Lire les mains, annoncer, pousser le pot. Égalité = partage.</li>
+    </ol>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 04</span></div>
+  </section>
+
+  <!-- 5 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 05 / 13</div></div>
+    <h2>Les annonces du dealer (FR / EN)</h2>
+    <table>
+      <tr><th>Français</th><th>Anglais</th></tr>
+      <tr><td>Parole à toi</td><td>Action on you</td></tr>
+      <tr><td>Relance à [montant]</td><td>Raise to [amount]</td></tr>
+      <tr><td>Suit</td><td>Call</td></tr>
+      <tr><td>Se couche</td><td>Fold</td></tr>
+      <tr><td>Tapis</td><td>All-in</td></tr>
+      <tr><td>Place libre</td><td>Seat open</td></tr>
+      <tr><td>Joueur en jeu</td><td>Player in</td></tr>
+      <tr><td>Abattage</td><td>Showdown</td></tr>
+      <tr><td>Brûle et retourne</td><td>Burn and turn</td></tr>
+      <tr><td>Floor !</td><td>Floor !</td></tr>
+    </table>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 05</span></div>
+  </section>
+
+  <!-- 6 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 06 / 13</div></div>
+    <h2>Side pots : la méthode en 3 étapes</h2>
+    <ol>
+      <li>Avancer les mises de tout le monde à hauteur du <b>plus petit tapis</b> : ça forme le pot principal.</li>
+      <li>Mettre le <b>surplus</b> des joueurs plus fortunés à part : c'est le side pot (le petit tapis n'y a pas droit).</li>
+      <li>S'il reste un tapis intermédiaire, recommencer pour créer un 2e side pot.</li>
+    </ol>
+    <p>Au showdown : attribuer <b>du side pot vers le pot principal</b>. Le joueur à tapis ne peut jamais gagner un side pot.</p>
+    <h3>Exemple chiffré (tapis 30, 80, 150, tous all-in)</h3>
+    <table>
+      <tr><th>Pot</th><th>Calcul</th><th>Montant</th></tr>
+      <tr><td>Pot principal</td><td>30 x 3</td><td>90</td></tr>
+      <tr><td>Side pot 1</td><td>(80 - 30) x 2</td><td>100</td></tr>
+      <tr><td>Side pot 2</td><td>(150 - 80) x 1</td><td>70</td></tr>
+    </table>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 06</span></div>
+  </section>
+
+  <!-- 7 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 07 / 13</div></div>
+    <h2>Litiges et misdeals : quoi faire</h2>
+    <ul>
+      <li><b>Carte exposée par le croupier en distribuant ?</b> En général elle devient la carte brûlée, le joueur reçoit une nouvelle carte.</li>
+      <li><b>Carte retournée par le joueur lui-même ?</b> Il la garde, c'est sa faute.</li>
+      <li><b>Mauvais nombre de cartes ou 1re carte au mauvais joueur, avant toute action ?</b> Misdeal : on reprend et on redistribue.</li>
+      <li><b>Une action a déjà eu lieu ?</b> Plus de misdeal possible, on continue.</li>
+      <li><b>Montant de mise contesté ?</b> On ne touche plus au pot, on reconstitue avec ce qui est visible.</li>
+      <li><b>Désaccord qui s'envenime ?</b> L'hôte fige la situation, parle calmement, rappelle la règle, tranche pareil pour tous.</li>
+    </ul>
+    <div class="memo">Principe constant : neutralité totale, transparence (mises devant les joueurs, pot au centre).</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 07</span></div>
+  </section>
+
+  <!-- 8 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 08 / 13</div></div>
+    <h2>Checklist matériel</h2>
+    <p><span class="checkbox"></span>Tapis de poker</p>
+    <p><span class="checkbox"></span>Set de jetons (au moins 4 couleurs, quantité suffisante)</p>
+    <p><span class="checkbox"></span>2 jeux de cartes en plastique</p>
+    <p><span class="checkbox"></span>1 cut card</p>
+    <p><span class="checkbox"></span>1 bouton dealer</p>
+    <p><span class="checkbox"></span>Timer de blindes (appli téléphone ou tablette)</p>
+    <p><span class="checkbox"></span>Feuille de caisse + stylo</p>
+    <p><span class="checkbox"></span>Affichette des valeurs de jetons</p>
+    <p><span class="checkbox"></span>Affichette des règles maison</p>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 08</span></div>
+  </section>
+
+  <!-- 9 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 09 / 13</div></div>
+    <h2>Feuille de caisse / cave</h2>
+    <table>
+      <tr><th>Joueur</th><th>Achat 1</th><th>Recave</th><th>Recave</th><th>Total acheté</th><th>Jetons fin</th><th>Rendu</th></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <div class="memo">Un seul responsable de la caisse. Tout échange argent / jetons se fait devant tout le monde et se note ici.</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 09</span></div>
+  </section>
+
+  <!-- 10 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 10 / 13</div></div>
+    <h2>3 structures de blindes</h2>
+    <p>Tapis de départ : 5000 jetons. Une pause conseillée après le niveau 4 ou 5.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <table style="flex:1;min-width:180px">
+        <tr><th colspan="2">Rapide (~30 min, 8 min/niv.)</th></tr>
+        <tr><th>Niv.</th><th>SB / BB</th></tr>
+        <tr><td>1</td><td>25 / 50</td></tr>
+        <tr><td>2</td><td>50 / 100</td></tr>
+        <tr><td>3</td><td>100 / 200</td></tr>
+        <tr><td>4</td><td>150 / 300</td></tr>
+        <tr><td>5</td><td>250 / 500</td></tr>
+        <tr><td>6</td><td>400 / 800</td></tr>
+      </table>
+      <table style="flex:1;min-width:180px">
+        <tr><th colspan="2">Moyenne (~60 min, 12 min/niv.)</th></tr>
+        <tr><th>Niv.</th><th>SB / BB</th></tr>
+        <tr><td>1</td><td>25 / 50</td></tr>
+        <tr><td>2</td><td>50 / 100</td></tr>
+        <tr><td>3</td><td>75 / 150</td></tr>
+        <tr><td>4</td><td>100 / 200</td></tr>
+        <tr><td>5</td><td>150 / 300</td></tr>
+        <tr><td>6</td><td>200 / 400</td></tr>
+        <tr><td>7</td><td>300 / 600</td></tr>
+        <tr><td>8</td><td>500 / 1000</td></tr>
+      </table>
+      <table style="flex:1;min-width:180px">
+        <tr><th colspan="2">Longue (~90 min+, 15-20 min/niv.)</th></tr>
+        <tr><th>Niv.</th><th>SB / BB</th></tr>
+        <tr><td>1</td><td>25 / 50</td></tr>
+        <tr><td>2</td><td>50 / 100</td></tr>
+        <tr><td>3</td><td>75 / 150</td></tr>
+        <tr><td>4</td><td>100 / 200</td></tr>
+        <tr><td>5</td><td>150 / 300</td></tr>
+        <tr><td>6</td><td>200 / 400</td></tr>
+        <tr><td>7</td><td>300 / 600</td></tr>
+        <tr><td>8</td><td>400 / 800</td></tr>
+        <tr><td>9</td><td>600 / 1200</td></tr>
+        <tr><td>10</td><td>800 / 1600</td></tr>
+      </table>
+    </div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 10</span></div>
+  </section>
+
+  <!-- 11 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 11 / 13</div></div>
+    <h2>Grille de gains (payouts)</h2>
+    <table>
+      <tr><th>Joueurs</th><th>Places payées</th><th>Répartition</th></tr>
+      <tr><td>6 à 9 (1 table)</td><td>3</td><td>50 / 30 / 20</td></tr>
+      <tr><td>10 à 18</td><td>3 à 4</td><td>45 / 27 / 18 / 10</td></tr>
+      <tr><td>19 à 27</td><td>5</td><td>40 / 25 / 15 / 12 / 8</td></tr>
+    </table>
+    <div class="memo">À décider et annoncer avant la première main. Le winner-takes-all (le 1er prend tout) se réserve aux très petites parties.</div>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 11</span></div>
+  </section>
+
+  <!-- 12 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 12 / 13</div></div>
+    <h2>Déroulé type d'une soirée</h2>
+    <ol>
+      <li>Accueil et échange argent / jetons (chacun, devant tous, noté sur la feuille de caisse).</li>
+      <li>Rappel des règles maison en 2 minutes (surtout pour les débutants).</li>
+      <li>Première main.</li>
+      <li>Pause à mi-parcours (boire, manger, recaves si autorisées avant la fin de la période).</li>
+      <li>Reprise.</li>
+      <li>Table finale, ou heure de fin annoncée d'avance.</li>
+      <li>Comptage final, on rend l'argent contre les jetons restants.</li>
+    </ol>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 12</span></div>
+  </section>
+
+  <!-- 13 -->
+  <section class="sheet">
+    <div class="head"><div class="brand">JEROME<span>|</span>IBIZA</div><div class="no">Fiche 13 / 13</div></div>
+    <h2>Règles maison à imprimer</h2>
+    <ul>
+      <li>Jeu : Texas Hold'em No Limit.</li>
+      <li>Blindes : <span class="blank"></span> / <span class="blank"></span>. Cave min : <span class="blank"></span>. Cave max : <span class="blank"></span>.</li>
+      <li>Recaves autorisées jusqu'au niveau / l'heure : <span class="blank"></span>.</li>
+      <li>Pas de string bet (mise en un seul geste).</li>
+      <li>Mises toujours posées devant soi, jamais cachées.</li>
+      <li>Ce qu'on pose sur la table reste sur la table (pas de rat-holing en cash game).</li>
+      <li>En cas de litige : on fige, l'hôte tranche, même règle pour tous.</li>
+      <li>Entre amis : pas de commission, montants raisonnables, tout le monde passe une bonne soirée.</li>
+      <li>Heure de fin prévue : <span class="blank"></span>.</li>
+    </ul>
+    <div class="foot"><span>Académie Croupier Jérôme Ibiza</span><span>Fiche 13</span></div>
+  </section>
+
+</div>
+</body>
+</html>
